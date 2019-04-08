@@ -71,24 +71,15 @@ function printQuote() {
   quoteHTML = "<p class = 'quote'>" + randQuote.quote + "</p>" +
   "<p class = 'source'>" + randQuote.source;
 
-  if (randQuote.citation === undefined) {
-    randQuote.citation = ' ';
-    quoteHTML;
-  } else {
+  if (randQuote.citation !== undefined) {
     quoteHTML += "<span class = 'citation'>" + randQuote.citation + "</span>";
-  } 
+  }
 
-  if (randQuote.year === undefined) {
-    randQuote.year = ' ';
-    quoteHTML;
-  } else {
+  if (randQuote.year !== undefined) {
     quoteHTML += "<span class = 'year'>" + randQuote.year + "</span>";
   }
 
-  if (randQuote.tags === undefined) {
-    randQuote.tags = ' ';
-    quoteHTML;
-  } else {
+  if (randQuote.tags !== undefined) {
     quoteHTML += "<span class = 'tags'>" + randQuote.tags + "</span>" + "</p>";
   }
 
