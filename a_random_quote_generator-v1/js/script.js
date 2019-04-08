@@ -10,28 +10,28 @@ const quotes = [
       source : 'Christian Bale',
       citation : 'Batman Begins',
       year : 2005,
-      tag : '#Movie'
+      tags : '#Movie'
   },
   {
       quote : 'It is hard to fail, but it is worse never to have tried to succeed.',
       source : 'Theodore Roosevelt',
       citation : 'The Strenuous Life',
       year : 1899,
-      tag : "#Speech"
+      tags : "#Speech"
   },
   {
       quote : 'Get busy living, or get busy dying.',
       source : 'Tim Robbins',
       citation : 'The Shawshank Redemption',
       year : 1994,
-      tag : '#Movie'
+      tags : '#Movie'
   },
   {
       quote : 'As my plastic surgeon always said, if you gotta go, go with a smile.',
       source : 'Jack Nicholson',
       citation : 'Batman',
       year : 1989,
-      tag : '#Movie'
+      tags : '#Movie'
   },
   {
       quote : 'The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.',
