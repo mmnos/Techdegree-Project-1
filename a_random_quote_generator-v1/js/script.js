@@ -38,7 +38,7 @@ const quotes = [
       source : 'Albert Einstein',
       citation : 'Living Philosophies',
       year : 1931,
-      tag : "#Books"
+      tags : "#Books"
   }
 ];
 
@@ -68,28 +68,28 @@ function printQuote() {
   let randQuote = getRandomQuote();
   let quoteHTML = ' ';
 
-  quoteHTML = '<p class = "quote">' + randQuote.quote + '</p>' +
-  '<p class = "source">' + randQuote.source;
+  quoteHTML = "<p class = 'quote'>" + randQuote.quote + "</p>" +
+  "<p class = 'source'>" + randQuote.source;
 
   if (randQuote.citation === undefined) {
     randQuote.citation = ' ';
     quoteHTML;
   } else {
-    quoteHTML += '<span class = "citation">' + randQuote.citation + '</span>'
+    quoteHTML += "<span class = 'citation'>" + randQuote.citation + "</span>";
   } 
 
   if (randQuote.year === undefined) {
     randQuote.year = ' ';
     quoteHTML;
   } else {
-    quoteHTML += '<span class = "year">' + randQuote.year + '</span>';
+    quoteHTML += "<span class = 'year'>" + randQuote.year + "</span>";
   }
 
-  if (randQuote.tag === undefined) {
-    randQuote.tag = ' ';
+  if (randQuote.tags === undefined) {
+    randQuote.tags = ' ';
     quoteHTML;
   } else {
-    quoteHTML += '<span class = "tag">' + randQuote.tag + '</span>' + '</p>';
+    quoteHTML += "<span class = 'tags'>" + randQuote.tags + "</span>" + "</p>";
   }
 
   document.getElementById('quote-box').innerHTML = quoteHTML;
@@ -99,7 +99,7 @@ function printQuote() {
 // sets printQuote function to display a new quote every 5 seconds
 function newQuote() {
   let timer;
-  timer = setInterval(printQuote, 5000);
+  timer = setInterval(printQuote, 10000);
 }
 
 // calls the function which changes the quote every couple seconds
