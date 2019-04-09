@@ -46,7 +46,7 @@ const quotes = [
 console.log(quotes);
 
 // function gets a random quote from the quotes array
-function getRandomQuote() {
+const getRandomQuote = () => {
   let randNum = quotes[Math.floor(Math.random() * quotes.length)];
   return randNum;
 }
@@ -55,7 +55,7 @@ function getRandomQuote() {
 console.log(getRandomQuote());
 
 // gets 3 random numbers less than 256 and strings them together to return a random color
-function randColor() {
+const randColor = () => {
   let color1 = Math.floor(Math.random() * 256);
   let color2 = Math.floor(Math.random() * 256);
   let color3 = Math.floor(Math.random() * 256);
@@ -63,8 +63,8 @@ function randColor() {
 }
 
 // gets the random quote and displays each property in the correct HTML format
-// it also checks to see if a property is missing and puts in an empty string
-function printQuote() {
+// it also checks to see if a property is missing
+const printQuote = () => {
   let randQuote = getRandomQuote();
   let quoteHTML = ' ';
 
@@ -88,7 +88,7 @@ function printQuote() {
 }
 
 // sets printQuote function to display a new quote every 5 seconds
-function newQuote() {
+const newQuote = () => {
   let timer;
   timer = setInterval(printQuote, 10000);
 }
